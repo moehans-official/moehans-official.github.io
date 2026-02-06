@@ -1,12 +1,20 @@
-﻿# MoehansStudio Website
+﻿# MoehansStudio Website (VitePress)
 
-MoehansStudio 官方网站（AI / LLM 方向），支持按系统语言自动显示中文或英文。
-部署目标仓库：`moehans-official/moehans-official.github.io`
+This site is built with VitePress and deployed to GitHub Pages.
 
-## 本地预览
+## Local development
 
-直接打开 `index.html`，或使用任意静态服务器运行。
+```bash
+npm install
+npm run docs:dev
+```
 
-## 线上地址
+## Build
 
-`https://moehans-official.github.io/`
+```bash
+npm run docs:build
+```
+
+Build output:
+
+- `docs/.vitepress/dist`
