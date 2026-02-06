@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoehansOffical | 官方网站</title>
+  <meta name="description" content="MoehansOffical 官方网站，欢迎来到 MoehansOffical 的线上空间。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <header class="site-header">
+    <div class="brand">MoehansOffical</div>
+    <nav>
+      <a href="#about">关于</a>
+      <a href="#links">链接</a>
+      <a href="#contact">联系</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <p class="eyebrow">OFFICIAL SITE</p>
+    <h1>欢迎来到 <span>MoehansOffical</span></h1>
+    <p class="lead">这里是 MoehansOffical 的唯一官方网站。内容将持续更新，敬请关注。</p>
+    <a class="cta" href="#links">查看官方链接</a>
+  </main>
+
+  <section id="about" class="card reveal">
+    <h2>关于本站</h2>
+    <p>本站用于发布 MoehansOffical 的官方信息、动态与入口链接。</p>
+  </section>
+
+  <section id="links" class="card reveal delay-1">
+    <h2>官方链接</h2>
+    <ul>
+      <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub（待替换为你的主页）</a></li>
+      <li><a href="mailto:contact@example.com">邮箱（待替换）</a></li>
+    </ul>
+  </section>
+
+  <section id="contact" class="card reveal delay-2">
+    <h2>联系</h2>
+    <p>商务合作或反馈请发送邮件至：<a href="mailto:contact@example.com">contact@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> MoehansOffical. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
