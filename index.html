@@ -4,71 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MoehansOffical | 官方网站</title>
-  <meta name="description" content="MoehansOffical 官方网站。一个总部位于中国香港的创意与技术工作室。" />
+  <meta name="description" content="MoehansOffical 官方网站。总部位于中国香港，专注创意与技术项目。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="aurora"></div>
+  <div class="backdrop"></div>
 
-  <header class="site-header container">
-    <a class="brand" href="#home">MoehansOffical</a>
+  <header class="topbar wrap">
+    <a class="logo" href="#">MoehansOffical</a>
     <nav>
-      <a href="#about">工作室</a>
+      <a href="#studio">工作室</a>
       <a href="#projects">项目</a>
       <a href="#contact">联系</a>
     </nav>
   </header>
 
-  <main id="home" class="hero container reveal">
-    <div class="hero-copy">
-      <p class="eyebrow">OFFICIAL WEBSITE</p>
-      <h1>面向未来的创意与技术工作室</h1>
-      <p class="lead">
-        MoehansOffical 总部位于中国香港，专注于数字产品、品牌体验与开源项目构建。
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">查看旗下项目</a>
-        <a class="btn ghost" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer">GitHub 仓库</a>
-      </div>
+  <main class="hero wrap">
+    <p class="kicker reveal">OFFICIAL STUDIO WEBSITE</p>
+    <h1 class="reveal delay-1">为下一代产品创造<br />清晰、强韧且可持续的体验。</h1>
+    <p class="intro reveal delay-2">
+      MoehansOffical 是一家总部位于中国香港的创意与技术工作室，聚焦数字产品、品牌表达与工程实现。
+    </p>
+    <div class="hero-actions reveal delay-3">
+      <a class="btn solid" href="#projects">查看项目</a>
+      <a class="btn line" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
-
-    <aside class="hero-panel">
-      <p class="panel-title">Studio Snapshot</p>
-      <ul>
-        <li><span>总部</span><strong>中国香港</strong></li>
-        <li><span>定位</span><strong>创意 + 技术</strong></li>
-        <li><span>官网</span><strong>moehans-official.github.io</strong></li>
-      </ul>
-    </aside>
   </main>
 
-  <section id="about" class="section container reveal delay-1">
-    <h2>关于 MoehansOffical</h2>
-    <p>
-      我们是一个以设计驱动、工程落地的工作室，提供从视觉表达到产品实现的完整链路。
-      官方公告、项目入口和合作信息会在本站持续更新。
-    </p>
-  </section>
-
-  <section id="projects" class="section container reveal delay-2">
-    <h2>旗下项目</h2>
-    <article class="project-card">
-      <p class="tag">FEATURED</p>
-      <h3>VeloeraCE</h3>
-      <p>VeloeraCE 是 MoehansOffical 旗下核心项目之一，可通过以下官方地址访问。</p>
-      <a href="https://moehans-official.github.io/VeloeraCE/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/VeloeraCE/</a>
+  <section id="studio" class="wrap cards reveal delay-4">
+    <article class="card">
+      <h2>工作室定位</h2>
+      <p>我们以设计策略和工程质量作为双核心，从概念到上线保持一致性。</p>
+    </article>
+    <article class="card">
+      <h2>总部</h2>
+      <p>中国香港</p>
+    </article>
+    <article class="card">
+      <h2>发布渠道</h2>
+      <p>本官网用于发布官方公告、项目入口和更新信息。</p>
     </article>
   </section>
 
-  <section id="contact" class="section container reveal delay-3">
-    <h2>联系</h2>
-    <p>合作与沟通请发送邮件至：<a href="mailto:contact@example.com">contact@example.com</a></p>
+  <section id="projects" class="wrap project reveal delay-5">
+    <p class="eyebrow">FEATURED PROJECT</p>
+    <h3>VeloeraCE</h3>
+    <p>访问 MoehansOffical 旗下项目：</p>
+    <a href="https://moehans-official.github.io/VeloeraCE/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/VeloeraCE/</a>
   </section>
 
-  <footer class="container">
+  <section id="contact" class="wrap contact reveal delay-6">
+    <h2>联系</h2>
+    <p>合作咨询：<a href="mailto:contact@example.com">contact@example.com</a></p>
+  </section>
+
+  <footer class="wrap foot">
     <p>© <span id="year"></span> MoehansOffical. All rights reserved.</p>
   </footer>
 
