@@ -4,150 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MoehansStudio | AI LLM Studio</title>
-  <meta name="description" content="MoehansStudio is an AI and LLM studio building language-native products." />
+  <meta name="description" content="MoehansStudio builds elegant AI and LLM products." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="mesh" aria-hidden="true"></div>
-  <div class="grain" aria-hidden="true"></div>
-
-  <header class="topbar shell">
-    <a class="logo" href="#home">MoehansStudio</a>
-    <nav>
-      <a href="#about" data-i18n="nav_about">Studio</a>
-      <a href="#capabilities" data-i18n="nav_capabilities">Capabilities</a>
-      <a href="#projects" data-i18n="nav_projects">Projects</a>
-      <a href="#contact" data-i18n="nav_contact">Contact</a>
-    </nav>
-    <p class="lang-chip" id="lang-chip">Language: English (Auto)</p>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="logo" href="#home">MoehansStudio</a>
+      <nav>
+        <a href="#about" data-i18n="nav_about">Studio</a>
+        <a href="#capabilities" data-i18n="nav_capabilities">Capabilities</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="home" class="shell">
-    <section class="hero reveal">
-      <div class="hero-copy">
-        <p class="kicker" data-i18n="hero_kicker">AI LLM STUDIO · OFFICIAL WEBSITE</p>
-        <h1 data-i18n="hero_title">Building expressive AI language products with engineering rigor.</h1>
-        <p class="lead" data-i18n="hero_lead">
-          MoehansStudio designs and ships AI-native experiences, from LLM interfaces to production-ready agent workflows.
-        </p>
-        <div class="hero-actions">
-          <a class="btn solid" href="#projects" data-i18n="cta_projects">Explore Projects</a>
-          <a class="btn ghost" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer" data-i18n="cta_repo">GitHub Repository</a>
-        </div>
+    <section class="hero">
+      <p class="kicker" data-i18n="hero_kicker">OFFICIAL WEBSITE</p>
+      <h1 data-i18n="hero_title">Elegant AI language products, built with precision.</h1>
+      <p class="lead" data-i18n="hero_lead">
+        MoehansStudio designs and delivers AI-native experiences, from LLM interfaces to production workflows.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects" data-i18n="cta_projects">View Projects</a>
+        <a class="btn secondary" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer" data-i18n="cta_repo">GitHub</a>
       </div>
-
-      <aside class="hero-art">
-        <div class="orbit">
-          <span class="node n1"></span>
-          <span class="node n2"></span>
-          <span class="node n3"></span>
-        </div>
-        <div class="stats">
-          <article>
-            <span data-i18n="stat_hq_label">Studio Type</span>
-            <strong data-i18n="stat_hq_value">Independent Studio</strong>
-          </article>
-          <article>
-            <span data-i18n="stat_focus_label">Focus</span>
-            <strong data-i18n="stat_focus_value">AI + LLM Systems</strong>
-          </article>
-          <article>
-            <span data-i18n="stat_project_label">Primary Project</span>
-            <strong data-i18n="stat_project_value">VeloeraCE</strong>
-          </article>
-        </div>
-      </aside>
     </section>
 
-    <section id="about" class="panel reveal delay-1">
-      <p class="panel-kicker" data-i18n="about_kicker">WHO WE ARE</p>
-      <h2 data-i18n="about_title">A studio where research taste and shipping quality meet.</h2>
+    <section id="about" class="section">
+      <h2 data-i18n="about_title">Studio</h2>
       <p data-i18n="about_body">
-        We blend design direction, product thinking, and software engineering to deliver reliable digital systems for modern teams.
+        We are a design and engineering studio focused on AI products that are clear, reliable, and refined.
       </p>
     </section>
 
-    <section id="capabilities" class="panel reveal delay-2">
-      <p class="panel-kicker" data-i18n="capabilities_kicker">WHAT WE BUILD</p>
-      <h2 data-i18n="capabilities_title">Core capabilities for AI-first products.</h2>
-      <div class="cards three">
+    <section id="capabilities" class="section">
+      <h2 data-i18n="capabilities_title">Capabilities</h2>
+      <div class="grid">
         <article class="card">
           <h3 data-i18n="cap_1_title">LLM Product Design</h3>
-          <p data-i18n="cap_1_body">Conversation UX, assistant workflows, and model-aware interaction patterns.</p>
+          <p data-i18n="cap_1_body">Conversation UX, assistant workflows, and model-aware interaction systems.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="cap_2_title">Agentic Workflows</h3>
-          <p data-i18n="cap_2_body">Task routing, tool calling, guardrails, and verifiable execution flows.</p>
+          <h3 data-i18n="cap_2_title">Agent Workflows</h3>
+          <p data-i18n="cap_2_body">Task routing, tool orchestration, and trustworthy execution pipelines.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="cap_3_title">Delivery Engineering</h3>
-          <p data-i18n="cap_3_body">High-quality frontend systems, performance tuning, and maintainable release pipelines.</p>
+          <h3 data-i18n="cap_3_title">Frontend Engineering</h3>
+          <p data-i18n="cap_3_body">High-performance interfaces with maintainable architecture and delivery quality.</p>
         </article>
       </div>
     </section>
 
-    <section class="panel reveal delay-3">
-      <p class="panel-kicker" data-i18n="pipeline_kicker">LLM PIPELINE</p>
-      <h2 data-i18n="pipeline_title">From idea to reliable production.</h2>
-      <p data-i18n="pipeline_body">Our execution model is built for traceability, iteration speed, and measurable quality.</p>
-
-      <div class="stack-pills">
-        <span data-i18n="pill_1">Prompt Architecture</span>
-        <span data-i18n="pill_2">Retrieval Layer</span>
-        <span data-i18n="pill_3">Context Strategy</span>
-        <span data-i18n="pill_4">Evaluation Benchmarks</span>
-        <span data-i18n="pill_5">Safety Guardrails</span>
-        <span data-i18n="pill_6">Observability</span>
-      </div>
-
-      <div class="cards four steps">
-        <article class="card">
-          <span class="index">01</span>
-          <h3 data-i18n="step_1_title">Research</h3>
-          <p data-i18n="step_1_body">Clarify user intent, scope boundaries, and product constraints.</p>
-        </article>
-        <article class="card">
-          <span class="index">02</span>
-          <h3 data-i18n="step_2_title">Design</h3>
-          <p data-i18n="step_2_body">Define interaction models, response behaviors, and trust signals.</p>
-        </article>
-        <article class="card">
-          <span class="index">03</span>
-          <h3 data-i18n="step_3_title">Build</h3>
-          <p data-i18n="step_3_body">Implement robust frontend and backend integrations with model tooling.</p>
-        </article>
-        <article class="card">
-          <span class="index">04</span>
-          <h3 data-i18n="step_4_title">Operate</h3>
-          <p data-i18n="step_4_body">Monitor quality, iterate prompts, and scale the delivery workflow.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="panel spotlight reveal delay-4">
-      <p class="panel-kicker" data-i18n="project_kicker">PROJECT SPOTLIGHT</p>
-      <h2 data-i18n="project_title">VeloeraCE</h2>
-      <p data-i18n="project_body">Explore the featured project by MoehansStudio:</p>
+    <section id="projects" class="section">
+      <h2 data-i18n="projects_title">Featured Project</h2>
+      <p data-i18n="projects_body">VeloeraCE by MoehansStudio.</p>
       <a class="project-link" href="https://moehans-official.github.io/VeloeraCE/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/VeloeraCE/</a>
     </section>
 
-    <section id="contact" class="panel reveal delay-5">
-      <p class="panel-kicker" data-i18n="contact_kicker">CONTACT</p>
-      <h2 data-i18n="contact_title">Let us build your AI language experience.</h2>
+    <section id="contact" class="section last">
+      <h2 data-i18n="contact_title">Contact</h2>
       <p data-i18n="contact_body">For collaboration and business inquiries:</p>
-      <div class="contact-list">
-        <p>
-          <span data-i18n="contact_email_label">Business Email</span>
-          <a href="mailto:contact@example.com">contact@example.com</a>
-        </p>
-        <p>
-          <span data-i18n="contact_org_label">Organization</span>
-          <a href="https://github.com/moehans-official" target="_blank" rel="noopener noreferrer">github.com/moehans-official</a>
-        </p>
-      </div>
+      <p class="contact-line">
+        <span data-i18n="contact_email_label">Email</span>
+        <a href="mailto:contact@example.com">contact@example.com</a>
+      </p>
+      <p class="contact-line">
+        <span data-i18n="contact_org_label">Organization</span>
+        <a href="https://github.com/moehans-official" target="_blank" rel="noopener noreferrer">github.com/moehans-official</a>
+      </p>
     </section>
   </main>
 
@@ -165,133 +95,71 @@
       var dict = {
         en: {
           page_title: 'MoehansStudio | AI LLM Studio',
-          page_description: 'MoehansStudio is an AI and LLM studio building language-native products.',
+          page_description: 'MoehansStudio builds elegant AI and LLM products.',
           nav_about: 'Studio',
           nav_capabilities: 'Capabilities',
           nav_projects: 'Projects',
           nav_contact: 'Contact',
-          lang_chip: 'Language: English (Auto)',
-          hero_kicker: 'AI LLM STUDIO · OFFICIAL WEBSITE',
-          hero_title: 'Building expressive AI language products with engineering rigor.',
-          hero_lead: 'MoehansStudio designs and ships AI-native experiences, from LLM interfaces to production-ready agent workflows.',
-          cta_projects: 'Explore Projects',
-          cta_repo: 'GitHub Repository',
-          stat_hq_label: 'Studio Type',
-          stat_hq_value: 'Independent Studio',
-          stat_focus_label: 'Focus',
-          stat_focus_value: 'AI + LLM Systems',
-          stat_project_label: 'Primary Project',
-          stat_project_value: 'VeloeraCE',
-          about_kicker: 'WHO WE ARE',
-          about_title: 'A studio where research taste and shipping quality meet.',
-          about_body: 'We blend design direction, product thinking, and software engineering to deliver reliable digital systems for modern teams.',
-          capabilities_kicker: 'WHAT WE BUILD',
-          capabilities_title: 'Core capabilities for AI-first products.',
+          hero_kicker: 'OFFICIAL WEBSITE',
+          hero_title: 'Elegant AI language products, built with precision.',
+          hero_lead: 'MoehansStudio designs and delivers AI-native experiences, from LLM interfaces to production workflows.',
+          cta_projects: 'View Projects',
+          cta_repo: 'GitHub',
+          about_title: 'Studio',
+          about_body: 'We are a design and engineering studio focused on AI products that are clear, reliable, and refined.',
+          capabilities_title: 'Capabilities',
           cap_1_title: 'LLM Product Design',
-          cap_1_body: 'Conversation UX, assistant workflows, and model-aware interaction patterns.',
-          cap_2_title: 'Agentic Workflows',
-          cap_2_body: 'Task routing, tool calling, guardrails, and verifiable execution flows.',
-          cap_3_title: 'Delivery Engineering',
-          cap_3_body: 'High-quality frontend systems, performance tuning, and maintainable release pipelines.',
-          pipeline_kicker: 'LLM PIPELINE',
-          pipeline_title: 'From idea to reliable production.',
-          pipeline_body: 'Our execution model is built for traceability, iteration speed, and measurable quality.',
-          pill_1: 'Prompt Architecture',
-          pill_2: 'Retrieval Layer',
-          pill_3: 'Context Strategy',
-          pill_4: 'Evaluation Benchmarks',
-          pill_5: 'Safety Guardrails',
-          pill_6: 'Observability',
-          step_1_title: 'Research',
-          step_1_body: 'Clarify user intent, scope boundaries, and product constraints.',
-          step_2_title: 'Design',
-          step_2_body: 'Define interaction models, response behaviors, and trust signals.',
-          step_3_title: 'Build',
-          step_3_body: 'Implement robust frontend and backend integrations with model tooling.',
-          step_4_title: 'Operate',
-          step_4_body: 'Monitor quality, iterate prompts, and scale the delivery workflow.',
-          project_kicker: 'PROJECT SPOTLIGHT',
-          project_title: 'VeloeraCE',
-          project_body: 'Explore the featured project by MoehansStudio:',
-          contact_kicker: 'CONTACT',
-          contact_title: 'Let us build your AI language experience.',
+          cap_1_body: 'Conversation UX, assistant workflows, and model-aware interaction systems.',
+          cap_2_title: 'Agent Workflows',
+          cap_2_body: 'Task routing, tool orchestration, and trustworthy execution pipelines.',
+          cap_3_title: 'Frontend Engineering',
+          cap_3_body: 'High-performance interfaces with maintainable architecture and delivery quality.',
+          projects_title: 'Featured Project',
+          projects_body: 'VeloeraCE by MoehansStudio.',
+          contact_title: 'Contact',
           contact_body: 'For collaboration and business inquiries:',
-          contact_email_label: 'Business Email',
+          contact_email_label: 'Email',
           contact_org_label: 'Organization',
           footer_text: 'MoehansStudio. All rights reserved.'
         },
         zh: {
           page_title: 'MoehansStudio | AI LLM 工作室',
-          page_description: 'MoehansStudio 是一家专注 AI 与 LLM 的工作室。',
+          page_description: 'MoehansStudio 专注打造优雅的 AI 与 LLM 产品。',
           nav_about: '工作室',
           nav_capabilities: '能力',
           nav_projects: '项目',
           nav_contact: '联系',
-          lang_chip: '语言：中文（系统自动）',
-          hero_kicker: 'AI LLM 工作室 · 官方网站',
-          hero_title: '以工程严谨性，打造具有表达力的 AI 语言产品。',
-          hero_lead: 'MoehansStudio 专注 AI 原生体验，从 LLM 交互界面到可落地的智能体工作流，提供完整实现。',
+          hero_kicker: '官方网站',
+          hero_title: '以克制与精度，打造优雅的 AI 语言产品。',
+          hero_lead: 'MoehansStudio 专注 AI 原生体验，从 LLM 交互界面到可上线的工作流实现。',
           cta_projects: '查看项目',
-          cta_repo: 'GitHub 仓库',
-          stat_hq_label: '工作室类型',
-          stat_hq_value: '独立工作室',
-          stat_focus_label: '方向',
-          stat_focus_value: 'AI + LLM 系统',
-          stat_project_label: '核心项目',
-          stat_project_value: 'VeloeraCE',
-          about_kicker: '我们是谁',
-          about_title: '一个把研究审美与交付质量放在同等位置的工作室。',
-          about_body: '我们将设计判断、产品思维与软件工程结合，为现代团队构建可靠、可迭代、可扩展的数字系统。',
-          capabilities_kicker: '我们构建什么',
-          capabilities_title: '面向 AI 产品的核心能力矩阵。',
+          cta_repo: 'GitHub',
+          about_title: '工作室',
+          about_body: '我们是一个以设计与工程为核心的 AI 工作室，追求清晰、可靠与长期可维护。',
+          capabilities_title: '核心能力',
           cap_1_title: 'LLM 产品设计',
-          cap_1_body: '对话体验设计、助手流程设计、模型感知交互模式。',
+          cap_1_body: '对话体验、助手流程与模型感知交互系统设计。',
           cap_2_title: '智能体工作流',
-          cap_2_body: '任务路由、工具调用、安全护栏与可验证执行链路。',
-          cap_3_title: '工程交付',
-          cap_3_body: '高质量前端系统、性能优化与可维护的发布流水线。',
-          pipeline_kicker: 'LLM 工程流水线',
-          pipeline_title: '从想法到稳定上线。',
-          pipeline_body: '我们的执行模型围绕可追踪性、迭代效率与可量化质量构建。',
-          pill_1: '提示词架构',
-          pill_2: '检索层',
-          pill_3: '上下文策略',
-          pill_4: '评估基准',
-          pill_5: '安全护栏',
-          pill_6: '可观测性',
-          step_1_title: '研究',
-          step_1_body: '明确用户意图、范围边界与产品约束。',
-          step_2_title: '设计',
-          step_2_body: '定义交互模型、响应行为与信任信号。',
-          step_3_title: '构建',
-          step_3_body: '完成稳健的前后端联调与模型工具链整合。',
-          step_4_title: '运营',
-          step_4_body: '监控质量、迭代策略并持续扩展交付能力。',
-          project_kicker: '项目聚焦',
-          project_title: 'VeloeraCE',
-          project_body: '访问 MoehansStudio 旗下重点项目：',
-          contact_kicker: '联系',
-          contact_title: '一起打造你的 AI 语言体验。',
+          cap_2_body: '任务路由、工具编排与可验证执行链路。',
+          cap_3_title: '前端工程交付',
+          cap_3_body: '高性能界面实现与可维护架构，保障长期交付质量。',
+          projects_title: '重点项目',
+          projects_body: 'MoehansStudio 旗下项目 VeloeraCE。',
+          contact_title: '联系',
           contact_body: '商务合作与项目咨询：',
-          contact_email_label: '商务邮箱',
-          contact_org_label: '组织主页',
+          contact_email_label: '邮箱',
+          contact_org_label: '组织',
           footer_text: 'MoehansStudio 版权所有。'
         }
       };
 
       var t = dict[locale];
       document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en';
-      document.body.setAttribute('data-locale', locale);
       document.title = t.page_title;
 
       var meta = document.querySelector('meta[name="description"]');
       if (meta) {
         meta.setAttribute('content', t.page_description);
-      }
-
-      var chip = document.getElementById('lang-chip');
-      if (chip) {
-        chip.textContent = t.lang_chip;
       }
 
       document.querySelectorAll('[data-i18n]').forEach(function (el) {
