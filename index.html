@@ -1,145 +1,311 @@
 ﻿<!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MoehansStudio | Official Website</title>
-  <meta name="description" content="MoehansStudio 官方网站。总部位于中国香港，提供创意与技术一体化服务。" />
+  <title>MoehansStudio | AI LLM Studio</title>
+  <meta name="description" content="MoehansStudio is an AI and LLM studio based in Hong Kong, China." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="backdrop"></div>
+  <div class="mesh" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-  <header class="topbar wrap">
+  <header class="topbar shell">
     <a class="logo" href="#home">MoehansStudio</a>
     <nav>
-      <a href="#about">关于 About</a>
-      <a href="#capabilities">能力 Capabilities</a>
-      <a href="#projects">项目 Projects</a>
-      <a href="#contact">联系 Contact</a>
+      <a href="#about" data-i18n="nav_about">Studio</a>
+      <a href="#capabilities" data-i18n="nav_capabilities">Capabilities</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
+    <p class="lang-chip" id="lang-chip">Language: English (Auto)</p>
   </header>
 
-  <main id="home" class="hero wrap reveal">
-    <p class="kicker">HONG KONG, CHINA · OFFICIAL WEBSITE</p>
-    <h1>以设计与工程协同，构建高质量数字体验。</h1>
-    <p class="cn">
-      MoehansStudio 是一家总部位于中国香港的创意与技术工作室，专注品牌体验、产品设计与前端工程落地。
-    </p>
-    <p class="en">
-      MoehansStudio is a Hong Kong based creative and technology studio focused on brand experiences,
-      product design, and production-ready web engineering.
-    </p>
-    <div class="hero-actions">
-      <a class="btn solid" href="#projects">查看项目 View Projects</a>
-      <a class="btn line" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer">GitHub</a>
-    </div>
+  <main id="home" class="shell">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="kicker" data-i18n="hero_kicker">AI LLM STUDIO · HONG KONG, CHINA</p>
+        <h1 data-i18n="hero_title">Building expressive AI language products with engineering rigor.</h1>
+        <p class="lead" data-i18n="hero_lead">
+          MoehansStudio designs and ships AI-native experiences, from LLM interfaces to production-ready agent workflows.
+        </p>
+        <div class="hero-actions">
+          <a class="btn solid" href="#projects" data-i18n="cta_projects">Explore Projects</a>
+          <a class="btn ghost" href="https://github.com/moehans-official/moehans-official.github.io" target="_blank" rel="noopener noreferrer" data-i18n="cta_repo">GitHub Repository</a>
+        </div>
+      </div>
+
+      <aside class="hero-art">
+        <div class="orbit">
+          <span class="node n1"></span>
+          <span class="node n2"></span>
+          <span class="node n3"></span>
+        </div>
+        <div class="stats">
+          <article>
+            <span data-i18n="stat_hq_label">Headquarters</span>
+            <strong data-i18n="stat_hq_value">Hong Kong, China</strong>
+          </article>
+          <article>
+            <span data-i18n="stat_focus_label">Focus</span>
+            <strong data-i18n="stat_focus_value">AI + LLM Systems</strong>
+          </article>
+          <article>
+            <span data-i18n="stat_project_label">Primary Project</span>
+            <strong data-i18n="stat_project_value">VeloeraCE</strong>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="panel reveal delay-1">
+      <p class="panel-kicker" data-i18n="about_kicker">WHO WE ARE</p>
+      <h2 data-i18n="about_title">A studio where research taste and shipping quality meet.</h2>
+      <p data-i18n="about_body">
+        We blend design direction, product thinking, and software engineering to deliver reliable digital systems for modern teams.
+      </p>
+    </section>
+
+    <section id="capabilities" class="panel reveal delay-2">
+      <p class="panel-kicker" data-i18n="capabilities_kicker">WHAT WE BUILD</p>
+      <h2 data-i18n="capabilities_title">Core capabilities for AI-first products.</h2>
+      <div class="cards three">
+        <article class="card">
+          <h3 data-i18n="cap_1_title">LLM Product Design</h3>
+          <p data-i18n="cap_1_body">Conversation UX, assistant workflows, and model-aware interaction patterns.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="cap_2_title">Agentic Workflows</h3>
+          <p data-i18n="cap_2_body">Task routing, tool calling, guardrails, and verifiable execution flows.</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="cap_3_title">Delivery Engineering</h3>
+          <p data-i18n="cap_3_body">High-quality frontend systems, performance tuning, and maintainable release pipelines.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel reveal delay-3">
+      <p class="panel-kicker" data-i18n="pipeline_kicker">LLM PIPELINE</p>
+      <h2 data-i18n="pipeline_title">From idea to reliable production.</h2>
+      <p data-i18n="pipeline_body">Our execution model is built for traceability, iteration speed, and measurable quality.</p>
+
+      <div class="stack-pills">
+        <span data-i18n="pill_1">Prompt Architecture</span>
+        <span data-i18n="pill_2">Retrieval Layer</span>
+        <span data-i18n="pill_3">Context Strategy</span>
+        <span data-i18n="pill_4">Evaluation Benchmarks</span>
+        <span data-i18n="pill_5">Safety Guardrails</span>
+        <span data-i18n="pill_6">Observability</span>
+      </div>
+
+      <div class="cards four steps">
+        <article class="card">
+          <span class="index">01</span>
+          <h3 data-i18n="step_1_title">Research</h3>
+          <p data-i18n="step_1_body">Clarify user intent, scope boundaries, and product constraints.</p>
+        </article>
+        <article class="card">
+          <span class="index">02</span>
+          <h3 data-i18n="step_2_title">Design</h3>
+          <p data-i18n="step_2_body">Define interaction models, response behaviors, and trust signals.</p>
+        </article>
+        <article class="card">
+          <span class="index">03</span>
+          <h3 data-i18n="step_3_title">Build</h3>
+          <p data-i18n="step_3_body">Implement robust frontend and backend integrations with model tooling.</p>
+        </article>
+        <article class="card">
+          <span class="index">04</span>
+          <h3 data-i18n="step_4_title">Operate</h3>
+          <p data-i18n="step_4_body">Monitor quality, iterate prompts, and scale the delivery workflow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="panel spotlight reveal delay-4">
+      <p class="panel-kicker" data-i18n="project_kicker">PROJECT SPOTLIGHT</p>
+      <h2 data-i18n="project_title">VeloeraCE</h2>
+      <p data-i18n="project_body">Explore the featured project by MoehansStudio:</p>
+      <a class="project-link" href="https://moehans-official.github.io/VeloeraCE/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/VeloeraCE/</a>
+    </section>
+
+    <section id="contact" class="panel reveal delay-5">
+      <p class="panel-kicker" data-i18n="contact_kicker">CONTACT</p>
+      <h2 data-i18n="contact_title">Let us build your AI language experience.</h2>
+      <p data-i18n="contact_body">For collaboration and business inquiries:</p>
+      <div class="contact-list">
+        <p>
+          <span data-i18n="contact_email_label">Business Email</span>
+          <a href="mailto:contact@example.com">contact@example.com</a>
+        </p>
+        <p>
+          <span data-i18n="contact_org_label">Organization</span>
+          <a href="https://github.com/moehans-official" target="_blank" rel="noopener noreferrer">github.com/moehans-official</a>
+        </p>
+      </div>
+    </section>
   </main>
 
-  <section id="about" class="section wrap reveal delay-1">
-    <p class="section-kicker">工作室简介 · Studio Overview</p>
-    <h2>从概念到上线，保持统一的体验与质量标准。</h2>
-    <p class="cn">
-      我们为项目提供策略、视觉、交互与开发一体化支持，确保设计语言、技术架构与业务目标在同一方向推进。
-    </p>
-    <p class="en">
-      We provide end-to-end support across strategy, visual systems, interaction design, and development,
-      keeping design language, technical architecture, and business goals aligned.
-    </p>
-  </section>
-
-  <section id="capabilities" class="section wrap reveal delay-2">
-    <p class="section-kicker">核心能力 · Capabilities</p>
-    <div class="grid three">
-      <article class="card">
-        <h3>品牌与体验 Brand Experience</h3>
-        <p class="cn">建立统一视觉体系、设计规则与内容表达，提高识别度与传播效率。</p>
-        <p class="en">Build cohesive visual systems and narrative structures for stronger recognition and communication.</p>
-      </article>
-      <article class="card">
-        <h3>产品与交互 Product Design</h3>
-        <p class="cn">围绕关键用户路径设计信息结构、交互流程与可扩展组件系统。</p>
-        <p class="en">Design scalable information architecture, interaction flows, and component systems around core journeys.</p>
-      </article>
-      <article class="card">
-        <h3>工程实现 Engineering Delivery</h3>
-        <p class="cn">采用现代前端技术完成高质量实现，兼顾性能、维护性与迭代效率。</p>
-        <p class="en">Ship robust implementations with modern frontend technologies, balancing performance and maintainability.</p>
-      </article>
-    </div>
-  </section>
-
-  <section class="section wrap reveal delay-3">
-    <p class="section-kicker">工作方法 · Workflow</p>
-    <div class="grid four steps">
-      <article class="card">
-        <span class="step-no">01</span>
-        <h3>研究 Research</h3>
-        <p class="cn">明确目标、受众与场景，建立项目边界与优先级。</p>
-        <p class="en">Define objectives, audience, and context to set priorities and project boundaries.</p>
-      </article>
-      <article class="card">
-        <span class="step-no">02</span>
-        <h3>定义 Define</h3>
-        <p class="cn">梳理信息结构、功能需求与视觉方向，形成可执行方案。</p>
-        <p class="en">Shape information architecture, functional scope, and visual direction into an executable plan.</p>
-      </article>
-      <article class="card">
-        <span class="step-no">03</span>
-        <h3>构建 Build</h3>
-        <p class="cn">以组件化方式实现页面与交互，持续验证体验与性能。</p>
-        <p class="en">Implement modular UI and interactions with iterative validation for quality and speed.</p>
-      </article>
-      <article class="card">
-        <span class="step-no">04</span>
-        <h3>迭代 Iterate</h3>
-        <p class="cn">根据反馈优化内容与功能，保持长期可维护性。</p>
-        <p class="en">Refine content and features from feedback while preserving long-term maintainability.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="projects" class="section wrap reveal delay-4">
-    <p class="section-kicker">旗下项目 · Projects</p>
-    <div class="grid two">
-      <article class="card featured">
-        <p class="eyebrow">FEATURED</p>
-        <h3>VeloeraCE</h3>
-        <p class="cn">MoehansStudio 旗下项目，可通过以下官方地址访问。</p>
-        <p class="en">A featured project by MoehansStudio, available at the official URL below.</p>
-        <a href="https://moehans-official.github.io/VeloeraCE/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/VeloeraCE/</a>
-      </article>
-      <article class="card">
-        <p class="eyebrow">OFFICIAL CHANNEL</p>
-        <h3>MoehansStudio Website</h3>
-        <p class="cn">本站用于发布公告、项目入口与工作室动态更新。</p>
-        <p class="en">This site publishes official announcements, project entries, and studio updates.</p>
-        <a href="https://moehans-official.github.io/" target="_blank" rel="noopener noreferrer">https://moehans-official.github.io/</a>
-      </article>
-    </div>
-  </section>
-
-  <section id="contact" class="section wrap reveal delay-5">
-    <p class="section-kicker">联系 · Contact</p>
-    <h2>欢迎合作与交流。</h2>
-    <p class="cn">商务合作与项目咨询，请通过以下方式联系：</p>
-    <p class="en">For business collaboration and project inquiries, reach out via:</p>
-    <p class="contact-line">
-      <a href="mailto:contact@example.com">contact@example.com</a>
-      <span>·</span>
-      <a href="https://github.com/moehans-official" target="_blank" rel="noopener noreferrer">github.com/moehans-official</a>
-    </p>
-  </section>
-
-  <footer class="wrap foot">
-    <p>© <span id="year"></span> MoehansStudio. All rights reserved.</p>
+  <footer class="shell footer">
+    <p>© <span id="year"></span> <span data-i18n="footer_text">MoehansStudio. All rights reserved.</span></p>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    (function () {
+      var preferred = (navigator.languages || [navigator.language || 'en']).map(function (x) {
+        return String(x || '').toLowerCase();
+      });
+      var locale = preferred.some(function (lang) { return lang.indexOf('zh') === 0; }) ? 'zh' : 'en';
+
+      var dict = {
+        en: {
+          page_title: 'MoehansStudio | AI LLM Studio',
+          page_description: 'MoehansStudio is an AI and LLM studio based in Hong Kong, China.',
+          nav_about: 'Studio',
+          nav_capabilities: 'Capabilities',
+          nav_projects: 'Projects',
+          nav_contact: 'Contact',
+          lang_chip: 'Language: English (Auto)',
+          hero_kicker: 'AI LLM STUDIO · HONG KONG, CHINA',
+          hero_title: 'Building expressive AI language products with engineering rigor.',
+          hero_lead: 'MoehansStudio designs and ships AI-native experiences, from LLM interfaces to production-ready agent workflows.',
+          cta_projects: 'Explore Projects',
+          cta_repo: 'GitHub Repository',
+          stat_hq_label: 'Headquarters',
+          stat_hq_value: 'Hong Kong, China',
+          stat_focus_label: 'Focus',
+          stat_focus_value: 'AI + LLM Systems',
+          stat_project_label: 'Primary Project',
+          stat_project_value: 'VeloeraCE',
+          about_kicker: 'WHO WE ARE',
+          about_title: 'A studio where research taste and shipping quality meet.',
+          about_body: 'We blend design direction, product thinking, and software engineering to deliver reliable digital systems for modern teams.',
+          capabilities_kicker: 'WHAT WE BUILD',
+          capabilities_title: 'Core capabilities for AI-first products.',
+          cap_1_title: 'LLM Product Design',
+          cap_1_body: 'Conversation UX, assistant workflows, and model-aware interaction patterns.',
+          cap_2_title: 'Agentic Workflows',
+          cap_2_body: 'Task routing, tool calling, guardrails, and verifiable execution flows.',
+          cap_3_title: 'Delivery Engineering',
+          cap_3_body: 'High-quality frontend systems, performance tuning, and maintainable release pipelines.',
+          pipeline_kicker: 'LLM PIPELINE',
+          pipeline_title: 'From idea to reliable production.',
+          pipeline_body: 'Our execution model is built for traceability, iteration speed, and measurable quality.',
+          pill_1: 'Prompt Architecture',
+          pill_2: 'Retrieval Layer',
+          pill_3: 'Context Strategy',
+          pill_4: 'Evaluation Benchmarks',
+          pill_5: 'Safety Guardrails',
+          pill_6: 'Observability',
+          step_1_title: 'Research',
+          step_1_body: 'Clarify user intent, scope boundaries, and product constraints.',
+          step_2_title: 'Design',
+          step_2_body: 'Define interaction models, response behaviors, and trust signals.',
+          step_3_title: 'Build',
+          step_3_body: 'Implement robust frontend and backend integrations with model tooling.',
+          step_4_title: 'Operate',
+          step_4_body: 'Monitor quality, iterate prompts, and scale the delivery workflow.',
+          project_kicker: 'PROJECT SPOTLIGHT',
+          project_title: 'VeloeraCE',
+          project_body: 'Explore the featured project by MoehansStudio:',
+          contact_kicker: 'CONTACT',
+          contact_title: 'Let us build your AI language experience.',
+          contact_body: 'For collaboration and business inquiries:',
+          contact_email_label: 'Business Email',
+          contact_org_label: 'Organization',
+          footer_text: 'MoehansStudio. All rights reserved.'
+        },
+        zh: {
+          page_title: 'MoehansStudio | AI LLM 工作室',
+          page_description: 'MoehansStudio 是一家总部位于中国香港、专注 AI 与 LLM 的工作室。',
+          nav_about: '工作室',
+          nav_capabilities: '能力',
+          nav_projects: '项目',
+          nav_contact: '联系',
+          lang_chip: '语言：中文（系统自动）',
+          hero_kicker: 'AI LLM 工作室 · 中国香港',
+          hero_title: '以工程严谨性，打造具有表达力的 AI 语言产品。',
+          hero_lead: 'MoehansStudio 专注 AI 原生体验，从 LLM 交互界面到可落地的智能体工作流，提供完整实现。',
+          cta_projects: '查看项目',
+          cta_repo: 'GitHub 仓库',
+          stat_hq_label: '总部',
+          stat_hq_value: '中国香港',
+          stat_focus_label: '方向',
+          stat_focus_value: 'AI + LLM 系统',
+          stat_project_label: '核心项目',
+          stat_project_value: 'VeloeraCE',
+          about_kicker: '我们是谁',
+          about_title: '一个把研究审美与交付质量放在同等位置的工作室。',
+          about_body: '我们将设计判断、产品思维与软件工程结合，为现代团队构建可靠、可迭代、可扩展的数字系统。',
+          capabilities_kicker: '我们构建什么',
+          capabilities_title: '面向 AI 产品的核心能力矩阵。',
+          cap_1_title: 'LLM 产品设计',
+          cap_1_body: '对话体验设计、助手流程设计、模型感知交互模式。',
+          cap_2_title: '智能体工作流',
+          cap_2_body: '任务路由、工具调用、安全护栏与可验证执行链路。',
+          cap_3_title: '工程交付',
+          cap_3_body: '高质量前端系统、性能优化与可维护的发布流水线。',
+          pipeline_kicker: 'LLM 工程流水线',
+          pipeline_title: '从想法到稳定上线。',
+          pipeline_body: '我们的执行模型围绕可追踪性、迭代效率与可量化质量构建。',
+          pill_1: '提示词架构',
+          pill_2: '检索层',
+          pill_3: '上下文策略',
+          pill_4: '评估基准',
+          pill_5: '安全护栏',
+          pill_6: '可观测性',
+          step_1_title: '研究',
+          step_1_body: '明确用户意图、范围边界与产品约束。',
+          step_2_title: '设计',
+          step_2_body: '定义交互模型、响应行为与信任信号。',
+          step_3_title: '构建',
+          step_3_body: '完成稳健的前后端联调与模型工具链整合。',
+          step_4_title: '运营',
+          step_4_body: '监控质量、迭代策略并持续扩展交付能力。',
+          project_kicker: '项目聚焦',
+          project_title: 'VeloeraCE',
+          project_body: '访问 MoehansStudio 旗下重点项目：',
+          contact_kicker: '联系',
+          contact_title: '一起打造你的 AI 语言体验。',
+          contact_body: '商务合作与项目咨询：',
+          contact_email_label: '商务邮箱',
+          contact_org_label: '组织主页',
+          footer_text: 'MoehansStudio 版权所有。'
+        }
+      };
+
+      var t = dict[locale];
+      document.documentElement.lang = locale === 'zh' ? 'zh-CN' : 'en';
+      document.body.setAttribute('data-locale', locale);
+      document.title = t.page_title;
+
+      var meta = document.querySelector('meta[name="description"]');
+      if (meta) {
+        meta.setAttribute('content', t.page_description);
+      }
+
+      var chip = document.getElementById('lang-chip');
+      if (chip) {
+        chip.textContent = t.lang_chip;
+      }
+
+      document.querySelectorAll('[data-i18n]').forEach(function (el) {
+        var key = el.getAttribute('data-i18n');
+        if (Object.prototype.hasOwnProperty.call(t, key)) {
+          el.textContent = t[key];
+        }
+      });
+
+      var year = document.getElementById('year');
+      if (year) {
+        year.textContent = String(new Date().getFullYear());
+      }
+    })();
   </script>
 </body>
 </html>
