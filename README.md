@@ -1,7 +1,7 @@
 ﻿# MoehansStudio Website
 
-这是 MoehansStudio 官方网站静态页面（中英双语版本），部署目标仓库为：
-`moehans-official/moehans-official.github.io`
+MoehansStudio 官方网站（AI / LLM 方向），支持按系统语言自动显示中文或英文。
+部署目标仓库：`moehans-official/moehans-official.github.io`
 
 ## 本地预览
 
